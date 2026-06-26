@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "abc-ds"
+  navbar:
+    left:
+      - text: Home
+        href: index.qmd
+
+      - text: Documentation
+        menu:
+          - text: Getting Started
+            href: documentation/
+          - text: Clinical Core Methods
+            href: documentation/clinical-core.html
+          - text: Data Import
+            href: documentation/summary.html
+      - text: About
+        href: about.qmd
+
+format:
+  html:
+    theme:
+      - lumen
+    css: styles.css
+
+execute: 
+  freeze: auto
+
+
+

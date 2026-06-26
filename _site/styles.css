@@ -1,0 +1,26 @@
+/* css styles */
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #f4f6f8;
+  color: #1f2d3d;
+}
+
+#quarto-appendix.default {
+  background: #f4f6f8;
+}
+
+/* Hide default Quarto page title since we use our own hero */
+.quarto-title-block {
+  display: none;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+}
+
+.dropdown-text {
+    color: #000000;
+}

@@ -1,0 +1,23 @@
+{
+  "documentation/intro.qmd": {
+    "intro.html": "495fe9a3"
+  },
+  "documentation/index.qmd": {
+    "index.html": "f4348717"
+  },
+  "documentation/summary.qmd": {
+    "summary.html": "862b225f"
+  },
+  "documentation/references.qmd": {
+    "references.html": "1d903858"
+  },
+  "index.qmd": {
+    "index.html": "63c9fb71"
+  },
+  "about.qmd": {
+    "about.html": "3515f2f5"
+  },
+  "documentation/clinical-core.qmd": {
+    "clinical-core.html": "cb78b81c"
+  }
+}
