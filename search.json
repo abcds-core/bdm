@@ -1,9 +1,16 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "codebook.html",
+    "href": "codebook.html",
+    "title": "Codebook",
     "section": "",
-    "text": "About this site"
+    "text": "Choose a Domain: \n\n\n\n\nDownload Selected Variables"
+  },
+  {
+    "objectID": "codebook.html#study-codebook",
+    "href": "codebook.html#study-codebook",
+    "title": "Codebook",
+    "section": "",
+    "text": "Choose a Domain: \n\n\n\n\nDownload Selected Variables"
   }
 ]

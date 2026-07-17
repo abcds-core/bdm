@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – abc-ds</title>
+<title>Codebook – abc-ds</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -70,6 +70,8 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="https://unpkg.com/tabulator-tables@6.3.0/dist/css/tabulator.min.css" rel="stylesheet">
+<script src="https://unpkg.com/tabulator-tables@6.3.0/dist/js/tabulator.min.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -97,8 +99,8 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
-<span class="menu-text">About</span></a>
+    <a class="nav-link active" href="./codebook.html" aria-current="page"> 
+<span class="menu-text">Codebook</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://abcds-core.github.io/documentation/"> 
@@ -121,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Codebook</h1>
 </div>
 
 
@@ -138,9 +140,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>About this site</p>
+<section id="study-codebook" class="level2">
+<h2 class="anchored" data-anchor-id="study-codebook">Study Codebook</h2>
+<p><label for="domain">Choose a Domain:</label> <select id="domain" name="domain"></select></p>
+<div id="variable-table">
+
+</div>
+<button id="download-btn">
+Download Selected Variables
+</button>
+<script src="js/codebook.js"></script>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
