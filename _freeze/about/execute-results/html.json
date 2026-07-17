@@ -1,0 +1,12 @@
+{
+  "hash": "8af0f943f4c6a5cf02b3fadde89605cb",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"About\"\nformat: html\n---\n\nAbout this site\n\n\n```{shinylive-r}\n#| standalone: true\n\nlibrary(shiny)\n\nui <- fluidPage(\n  sliderInput(\"n\", \"Number of points\", 100, 1000, 500),\n  plotOutput(\"plot\")\n)\n\nserver <- function(input, output) {\n  output$plot <- renderPlot({\n    plot(\n      rnorm(input$n),\n      rnorm(input$n),\n      pch = 19,\n      col = \"steelblue\"\n    )\n  })\n}\n\nshinyApp(ui, server)\n```\n\n",
+    "supporting": [
+      "about_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

@@ -22,5 +22,84 @@ body {
 }
 
 .dropdown-text {
-    color: #000000;
+  color: #000000;
+}
+
+/* Codebook Page Styling */
+
+/* ---------- Container ---------- */
+#variable-table {
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.9rem;
+}
+
+/* ---------- Header ---------- */
+#variable-table .tabulator-header {
+  background-color: #f5f6f8;
+  border-bottom: 2px solid #e2e4e8;
+  font-weight: 600;
+  color: #2d2f36;
+}
+
+#variable-table .tabulator-col {
+  border-right: 1px solid #e2e4e8;
+}
+
+/* ---------- Rows ---------- */
+#variable-table .tabulator-row {
+  border-bottom: 1px solid #eceef1;
+  transition: background-color 0.15s ease;
+}
+
+#variable-table .tabulator-row:hover {
+  background-color: #f8fafc;
+}
+
+#variable-table .tabulator-row.tabulator-selected {
+  background-color: #e8f0fe;
+}
+
+#variable-table .tabulator-row.tabulator-selected:hover {
+  background-color: #dbe7fd;
+}
+
+#variable-table .tabulator-cell {
+  padding: 8px 12px;
+}
+
+/* ---------- Download button ---------- */
+#download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  margin-top: 12px;
+  background-color: #2563eb;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    transform 0.1s ease;
+}
+
+#download-btn:hover {
+  background-color: #1d4ed8;
+}
+
+#download-btn:active {
+  transform: translateY(1px);
+}
+
+#download-btn:disabled {
+  background-color: #a5b4d0;
+  cursor: not-allowed;
 }

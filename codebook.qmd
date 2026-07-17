@@ -1,0 +1,16 @@
+---
+title: "Codebook"
+---
+
+## Study Codebook
+
+<label for="domain">Choose a Domain:</label>
+<select id="domain" name="domain"></select>
+
+<div id="variable-table"></div>
+
+<button id="download-btn">
+Download Selected Variables
+</button>
+
+<script src="js/codebook.js"></script>

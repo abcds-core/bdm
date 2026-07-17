@@ -8,26 +8,23 @@ website:
     left:
       - text: Home
         href: index.qmd
-
+      - text: Codebook
+        href: codebook.qmd
       - text: Documentation
-        menu:
-          - text: Getting Started
-            href: documentation/
-          - text: Clinical Core Methods
-            href: documentation/clinical-core.html
-          - text: Data Import
-            href: documentation/summary.html
-      - text: About
-        href: about.qmd
+        href: https://abcds-core.github.io/documentation/
 
 format:
   html:
     theme:
       - lumen
     css: styles.css
+    include-in-header:
+      text: |
+        <link href="https://unpkg.com/tabulator-tables@6.3.0/dist/css/tabulator.min.css" rel="stylesheet">
+        <script src="https://unpkg.com/tabulator-tables@6.3.0/dist/js/tabulator.min.js"></script>
 
-execute: 
+execute:
   freeze: auto
 
-
-
+resources:
+  - codebook.json
