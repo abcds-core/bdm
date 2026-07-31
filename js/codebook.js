@@ -42,6 +42,15 @@ async function init() {
     ],
   });
 
+  // Use this once the commonly used variable indicator is there to select by default
+  // table.on("tableBuilt", function () {
+  //   table.getRows().forEach((row) => {
+  //     if (row.getData().common === 1) {
+  //       row.select();
+  //     }
+  //   });
+  // });
+
   document.getElementById("domain").addEventListener("change", (event) => {
     const domain = event.target.value;
 
