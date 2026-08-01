@@ -1,0 +1,36 @@
+.donut-chart__graphic {
+  height: 160px;
+}
+
+.donut-chart__legend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.donut-chart__legend-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: var(--text);
+}
+
+.donut-chart__legend-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.donut-chart__legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.donut-chart__legend-value {
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+}

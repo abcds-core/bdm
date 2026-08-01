@@ -1,0 +1,149 @@
+[
+  {
+    "id": "upd-018",
+    "date": "2026-07-28",
+    "type": "correction",
+    "title": "Corrected miscoded sex variable",
+    "freeze": 6,
+    "summary": "3 records in the enrollment table had sex miscoded due to a REDCap branching logic error.",
+    "details": [
+      "Affected records: 3 (participant IDs available in change log)",
+      "Field corrected: demo_sex",
+      "Root cause: REDCap branching logic skipped the field for records entered via mobile app between May 1–14",
+      "No downstream analyses used affected records prior to correction"
+    ]
+  },
+  {
+    "id": "upd-017",
+    "date": "2026-07-21",
+    "type": "addition",
+    "title": "Added caregiver burden questionnaire data",
+    "freeze": 6,
+    "summary": "New variables from the Zarit Burden Interview, collected at 12-month follow-up.",
+    "details": [
+      "New file: caregiver_burden.csv",
+      "22 new variables (zbi_1 through zbi_22, plus zbi_total)",
+      "Coverage: 84 of 112 eligible participants",
+      "Codebook updated with domain label 'Caregiver Burden'"
+    ]
+  },
+  {
+    "id": "upd-016",
+    "date": "2026-07-10",
+    "type": "documentation",
+    "title": "Updated data dictionary for cognitive battery",
+    "freeze": 6,
+    "summary": "Clarified scoring conventions for reverse-coded items in the cognitive battery.",
+    "details": [
+      "Added scoring notes for cog_flex_3, cog_flex_7, cog_flex_9",
+      "No changes to underlying data values",
+      "Codebook PDF and interactive browser both updated"
+    ]
+  },
+  {
+    "id": "upd-015",
+    "date": "2026-06-14",
+    "type": "freeze",
+    "title": "Freeze 6 released",
+    "freeze": 6,
+    "summary": "Sixth data freeze. Includes enrollment through May 31, 2026, plus first release of actigraphy summary variables.",
+    "details": [
+      "N = 312 enrolled, 268 with complete baseline visits",
+      "New domain: actigraphy summary (sleep efficiency, total sleep time, wake bouts)",
+      "Enrollment data current through May 31, 2026",
+      "Withdrawal status updated for 6 participants since Freeze 5",
+      "File: cohort_freeze6.csv, actigraphy_summary_freeze6.csv"
+    ]
+  },
+  {
+    "id": "upd-014",
+    "date": "2026-06-02",
+    "type": "removal",
+    "title": "Removed duplicate MoCA records",
+    "freeze": 5,
+    "summary": "8 duplicate MoCA administrations removed after data manager audit.",
+    "details": [
+      "Cause: double data entry during site transition in April",
+      "Retained record: earliest complete administration per participant",
+      "Removed records logged separately for audit trail"
+    ]
+  },
+  {
+    "id": "upd-013",
+    "date": "2026-05-19",
+    "type": "addition",
+    "title": "Added race/ethnicity detail variables",
+    "freeze": 5,
+    "summary": "Expanded single race/ethnicity field into granular multi-select variables per NIH reporting requirements.",
+    "details": [
+      "New variables: race_white, race_black, race_asian, race_aian, race_nhpi, race_other, ethnicity_hispanic",
+      "Original combined field (race_ethnicity) retained for backward compatibility",
+      "Backfilled from source consent forms where available (94% coverage)"
+    ]
+  },
+  {
+    "id": "upd-012",
+    "date": "2026-04-30",
+    "type": "freeze",
+    "title": "Freeze 5 released",
+    "freeze": 5,
+    "summary": "Fifth data freeze. Enrollment through March 31, 2026.",
+    "details": [
+      "N = 289 enrolled, 241 with complete baseline visits",
+      "Enrollment data current through March 31, 2026",
+      "File: cohort_freeze5.csv"
+    ]
+  },
+  {
+    "id": "upd-011",
+    "date": "2026-04-08",
+    "type": "correction",
+    "title": "Corrected age calculation error",
+    "freeze": 4,
+    "summary": "Age at enrollment was calculated from visit date instead of consent date for 14 records.",
+    "details": [
+      "Affected variable: age_enroll",
+      "Discrepancy ranged from 1 to 34 days",
+      "Corrected using consent_date field as source of truth going forward"
+    ]
+  },
+  {
+    "id": "upd-010",
+    "date": "2026-03-12",
+    "type": "freeze",
+    "title": "Freeze 4 released",
+    "freeze": 4,
+    "summary": "Fourth data freeze. Enrollment through February 28, 2026.",
+    "details": [
+      "N = 254 enrolled, 201 with complete baseline visits",
+      "Enrollment data current through February 28, 2026",
+      "File: cohort_freeze4.csv"
+    ]
+  },
+  {
+    "id": "upd-009",
+    "date": "2026-02-14",
+    "type": "addition",
+    "title": "Added dietary intake summary variables",
+    "freeze": 3,
+    "summary": "Derived nutrient totals from ASA24 24-hour recall data.",
+    "details": [
+      "New file: dietary_summary.csv",
+      "Variables include total kcal, macronutrient breakdown, and MIND diet adherence score",
+      "Coverage: 178 of 219 eligible participants"
+    ]
+  },
+  {
+    "id": "upd-008",
+    "date": "2026-01-15",
+    "type": "freeze",
+    "title": "Freeze 3 released",
+    "freeze": 3,
+    "summary": "Third data freeze. Enrollment through December 31, 2025.",
+    "details": [
+      "N = 219 enrolled, 176 with complete baseline visits",
+      "Enrollment data current through December 31, 2025",
+      "File: cohort_freeze3.csv"
+    ]
+  }
+]

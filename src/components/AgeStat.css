@@ -1,0 +1,26 @@
+.age-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 160px;
+  gap: 0.25rem;
+}
+
+.age-stat__value {
+  font-family: var(--font-mono);
+  font-size: 2.125rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.age-stat__label {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.age-stat__range {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
