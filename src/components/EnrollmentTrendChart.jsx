@@ -25,19 +25,27 @@ const MONTH_ABBR = [
   "Dec",
 ];
 
+function formatLabel(dateStr) {
+  const [year, month] = dateStr.split("-").map(Number);
+  return `${MONTH_ABBR[month - 1] ?? month} '${String(year).slice(2)}`;
+}
+
 export default function EnrollmentTrendChart({ data }) {
   const chartData = useMemo(() => {
     if (!Array.isArray(data)) return [];
 
     return [...data]
-      .sort((a, b) => a.year - b.year || a.month - b.month)
+      .sort((a, b) => a.examdate.localeCompare(b.examdate))
       .map((d) => ({
-        label: `${MONTH_ABBR[d.month - 1] ?? d.month} '${String(d.year).slice(2)}`,
-        year: d.year,
-        month: d.month,
+        label: formatLabel(d.examdate),
+        examdate: d.examdate,
         cumulative: d.n,
       }));
   }, [data]);
+
+  const ticks = useMemo(() => {
+    return chartData.map((d) => d.label).filter((_, i) => i > 1 && i % 6 === 0); // skip first 2 points, then every 6th
+  }, [chartData]);
 
   return (
     <div className="enrollment-trend-chart">
@@ -63,11 +71,10 @@ export default function EnrollmentTrendChart({ data }) {
           <CartesianGrid stroke="var(--border)" vertical={false} />
           <XAxis
             dataKey="label"
+            ticks={ticks}
             tick={{ fontSize: 12, fill: "var(--text-muted)" }}
             axisLine={{ stroke: "var(--border)" }}
             tickLine={false}
-            interval="preserveStartEnd"
-            minTickGap={24}
           />
           <YAxis
             tick={{ fontSize: 12, fill: "var(--text-muted)" }}
@@ -80,7 +87,6 @@ export default function EnrollmentTrendChart({ data }) {
               borderRadius: 8,
               border: "1px solid var(--border)",
             }}
-            labelFormatter={(label) => label}
             formatter={(value) => [value, "Enrollment"]}
           />
           <Area
