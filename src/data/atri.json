@@ -1,0 +1,357 @@
+{
+  "date": "August 05, 2026",
+  "consented": 573,
+  "status": [
+    {
+      "key": "enrolled",
+      "label": "Enrolled",
+      "value": 570,
+      "color": "blue"
+    },
+    {
+      "key": "active",
+      "label": "Active",
+      "value": 515,
+      "color": "green"
+    },
+    {
+      "key": "deaths",
+      "label": "Deaths",
+      "value": 27,
+      "color": "red"
+    },
+    {
+      "key": "ltfu",
+      "label": "Lost to Follow Up",
+      "value": 3,
+      "color": "amber"
+    }
+  ],
+  "enrollment_over_time": [
+    {
+      "examdate": "2021-09",
+      "n": 1
+    },
+    {
+      "examdate": "2021-10",
+      "n": 2
+    },
+    {
+      "examdate": "2021-11",
+      "n": 6
+    },
+    {
+      "examdate": "2021-12",
+      "n": 9
+    },
+    {
+      "examdate": "2022-01",
+      "n": 13
+    },
+    {
+      "examdate": "2022-02",
+      "n": 18
+    },
+    {
+      "examdate": "2022-03",
+      "n": 23
+    },
+    {
+      "examdate": "2022-04",
+      "n": 34
+    },
+    {
+      "examdate": "2022-05",
+      "n": 49
+    },
+    {
+      "examdate": "2022-06",
+      "n": 61
+    },
+    {
+      "examdate": "2022-07",
+      "n": 71
+    },
+    {
+      "examdate": "2022-08",
+      "n": 89
+    },
+    {
+      "examdate": "2022-09",
+      "n": 106
+    },
+    {
+      "examdate": "2022-10",
+      "n": 131
+    },
+    {
+      "examdate": "2022-11",
+      "n": 146
+    },
+    {
+      "examdate": "2022-12",
+      "n": 161
+    },
+    {
+      "examdate": "2023-01",
+      "n": 182
+    },
+    {
+      "examdate": "2023-02",
+      "n": 208
+    },
+    {
+      "examdate": "2023-03",
+      "n": 228
+    },
+    {
+      "examdate": "2023-04",
+      "n": 249
+    },
+    {
+      "examdate": "2023-05",
+      "n": 270
+    },
+    {
+      "examdate": "2023-06",
+      "n": 287
+    },
+    {
+      "examdate": "2023-07",
+      "n": 296
+    },
+    {
+      "examdate": "2023-08",
+      "n": 306
+    },
+    {
+      "examdate": "2023-09",
+      "n": 318
+    },
+    {
+      "examdate": "2023-10",
+      "n": 322
+    },
+    {
+      "examdate": "2023-11",
+      "n": 331
+    },
+    {
+      "examdate": "2023-12",
+      "n": 340
+    },
+    {
+      "examdate": "2024-01",
+      "n": 347
+    },
+    {
+      "examdate": "2024-02",
+      "n": 354
+    },
+    {
+      "examdate": "2024-03",
+      "n": 361
+    },
+    {
+      "examdate": "2024-04",
+      "n": 364
+    },
+    {
+      "examdate": "2024-05",
+      "n": 374
+    },
+    {
+      "examdate": "2024-06",
+      "n": 389
+    },
+    {
+      "examdate": "2024-07",
+      "n": 404
+    },
+    {
+      "examdate": "2024-08",
+      "n": 412
+    },
+    {
+      "examdate": "2024-09",
+      "n": 423
+    },
+    {
+      "examdate": "2024-10",
+      "n": 437
+    },
+    {
+      "examdate": "2024-11",
+      "n": 447
+    },
+    {
+      "examdate": "2024-12",
+      "n": 451
+    },
+    {
+      "examdate": "2025-01",
+      "n": 458
+    },
+    {
+      "examdate": "2025-02",
+      "n": 464
+    },
+    {
+      "examdate": "2025-03",
+      "n": 469
+    },
+    {
+      "examdate": "2025-04",
+      "n": 475
+    },
+    {
+      "examdate": "2025-05",
+      "n": 482
+    },
+    {
+      "examdate": "2025-06",
+      "n": 488
+    },
+    {
+      "examdate": "2025-07",
+      "n": 496
+    },
+    {
+      "examdate": "2025-08",
+      "n": 507
+    },
+    {
+      "examdate": "2025-09",
+      "n": 516
+    },
+    {
+      "examdate": "2025-10",
+      "n": 526
+    },
+    {
+      "examdate": "2025-11",
+      "n": 532
+    },
+    {
+      "examdate": "2025-12",
+      "n": 536
+    },
+    {
+      "examdate": "2026-01",
+      "n": 538
+    },
+    {
+      "examdate": "2026-02",
+      "n": 546
+    },
+    {
+      "examdate": "2026-03",
+      "n": 552
+    },
+    {
+      "examdate": "2026-04",
+      "n": 558
+    },
+    {
+      "examdate": "2026-05",
+      "n": 562
+    },
+    {
+      "examdate": "2026-06",
+      "n": 564
+    },
+    {
+      "examdate": "2026-07",
+      "n": 568
+    },
+    {
+      "examdate": "2026-08",
+      "n": 569
+    }
+  ],
+  "age": {
+    "mean": 43,
+    "sd": 10,
+    "min": 25,
+    "max": 71
+  },
+  "sex": [
+    {
+      "label": "Female",
+      "value": 227,
+      "color": "var(--accent-blue)"
+    },
+    {
+      "label": "Male",
+      "value": 282,
+      "color": "var(--accent-green)"
+    }
+  ],
+  "race_ethnicity": [
+    {
+      "label": "White",
+      "value": 483
+    },
+    {
+      "label": "African American",
+      "value": 16
+    },
+    {
+      "label": "Asian",
+      "value": 15
+    },
+    {
+      "label": "American Indian",
+      "value": 3
+    },
+    {
+      "label": "Native Hawaiian",
+      "value": 2
+    },
+    {
+      "label": "Other",
+      "value": 4
+    },
+    {
+      "label": "Hispanic / Latino",
+      "value": 42
+    }
+  ],
+  "site_activity": [
+    {
+      "site_initials": "UCAM",
+      "event_code": "+ 1 Cycle3 (Total 20)",
+      "examdate": "Aug 03",
+      "n": 20,
+      "color": "purple"
+    },
+    {
+      "site_initials": "NYSIBRDD",
+      "event_code": "+ 1 Cycle1 (Total 80)",
+      "examdate": "Aug 01",
+      "n": 80,
+      "color": "var(--accent-green)"
+    },
+    {
+      "site_initials": "UPITT",
+      "event_code": "+ 1 Cycle1 (Total 58)",
+      "examdate": "Jul 29",
+      "n": 58,
+      "color": "var(--accent-amber)"
+    },
+    {
+      "site_initials": "UCAM",
+      "event_code": "+ 1 Cycle3 (Total 20)",
+      "examdate": "Jul 28",
+      "n": 20,
+      "color": "purple"
+    },
+    {
+      "site_initials": "NYSIBRDD",
+      "event_code": "+ 1 Cycle1 (Total 80)",
+      "examdate": "Jul 27",
+      "n": 80,
+      "color": "var(--accent-green)"
+    }
+  ]
+}
