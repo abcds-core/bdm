@@ -1,10 +1,23 @@
 .age-stat {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  height: 160px;
-  gap: 0.25rem;
+  min-height: 160px;
+  gap: 0.375rem;
+  text-align: center;
+}
+
+.age-stat__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--surface-alt);
+  color: var(--accent-blue);
+  margin-bottom: 0.25rem;
 }
 
 .age-stat__value {
@@ -12,6 +25,7 @@
   font-size: 2.125rem;
   font-weight: 600;
   color: var(--text);
+  line-height: 1;
 }
 
 .age-stat__label {
@@ -19,8 +33,37 @@
   color: var(--text-muted);
 }
 
+.age-stat__bar {
+  position: relative;
+  width: 70%;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--surface-alt);
+  margin-top: 0.5rem;
+}
+
+.age-stat__sd-band {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  border-radius: 3px;
+  background: var(--accent-blue);
+  opacity: 0.25;
+}
+
+.age-stat__marker {
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent-blue);
+  border: 2px solid var(--surface);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 1px var(--border);
+}
+
 .age-stat__range {
   font-size: 0.75rem;
   color: var(--text-muted);
-  margin-top: 0.5rem;
 }

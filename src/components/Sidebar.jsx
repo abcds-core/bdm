@@ -13,10 +13,16 @@ import abcdsLogo from "/abcds.png";
 const NAV_ITEMS = [
   { label: "Dashboard", icon: LayoutDashboard, path: "/" },
   { label: "Codebook", icon: FileText, path: "/codebook" },
+  // { label: "Vignettes", icon: FileText, path: "/vignettes" },
   {
     label: "Documentation",
     icon: ClipboardList,
     href: "https://abcds-core.github.io/documentation/",
+  },
+  {
+    label: "KBIT-2 Calculator",
+    icon: ClipboardList,
+    href: "https://bhelsel.github.io/kbit2/",
   },
   { label: "Team", icon: UserCog, path: "/team" },
   { label: "Data Updates", icon: Settings, path: "/data-updates" },

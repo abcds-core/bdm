@@ -1,19 +1,29 @@
+import { useLocation } from "react-router-dom";
 import { Search, Bell, Sun, Moon, Menu } from "lucide-react";
 import "./Topbar.css";
 
+const page_title = {
+  "/": "Enrollment Dashboard",
+  "/codebook": "Codebook",
+  "/team": "Team",
+  "/data-updates": "Data Updates",
+};
+
 export default function Topbar({ mode, onToggleMode }) {
+  const location = useLocation();
+  const title = page_title[location.pathname] ?? page_title["/"];
+
   return (
     <div className="topbar">
       <div className="topbar__left">
-        <Menu size={18} className="topbar__icon-muted" />
-        <div className="topbar__search">
-          <Search size={15} className="topbar__icon-muted" />
-          <input placeholder="Search participants..." className="topbar__search-input" />
-        </div>
+        <h1 className="topbar__title">{title}</h1>
       </div>
-
       <div className="topbar__right">
-        <button className="topbar__button" onClick={onToggleMode} aria-label="Toggle color mode">
+        <button
+          className="topbar__button"
+          onClick={onToggleMode}
+          aria-label="Toggle color mode"
+        >
           {mode === "dark" ? <Sun size={16} /> : <Moon size={16} />}
         </button>
         <button className="topbar__button" aria-label="Notifications">

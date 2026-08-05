@@ -6,6 +6,13 @@
   border-bottom: 1px solid var(--border);
 }
 
+.topbar__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0;
+}
+
 .topbar__left {
   display: flex;
   align-items: center;
@@ -13,29 +20,6 @@
 }
 
 .topbar__icon-muted {
-  color: var(--text-muted);
-}
-
-.topbar__search {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.375rem 0.75rem;
-  border-radius: 0.375rem;
-  background: var(--surface-alt);
-  border: 1px solid var(--border);
-}
-
-.topbar__search-input {
-  background: transparent;
-  border: none;
-  outline: none;
-  font-size: 0.875rem;
-  color: var(--text);
-  width: 200px;
-}
-
-.topbar__search-input::placeholder {
   color: var(--text-muted);
 }
 

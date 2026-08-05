@@ -97,6 +97,10 @@ body {
   grid-column: span 8;
 }
 
+.app__col-12 {
+  grid-column: span 12;
+}
+
 @media (max-width: 900px) {
   .app__stat-grid {
     grid-template-columns: repeat(2, 1fr);
