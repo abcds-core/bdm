@@ -90,183 +90,183 @@
     },
     {
       "examdate": "2022-12",
-      "n": 161
+      "n": 160
     },
     {
       "examdate": "2023-01",
-      "n": 182
+      "n": 181
     },
     {
       "examdate": "2023-02",
-      "n": 208
+      "n": 207
     },
     {
       "examdate": "2023-03",
-      "n": 228
+      "n": 227
     },
     {
       "examdate": "2023-04",
-      "n": 249
+      "n": 248
     },
     {
       "examdate": "2023-05",
-      "n": 270
+      "n": 269
     },
     {
       "examdate": "2023-06",
-      "n": 287
+      "n": 286
     },
     {
       "examdate": "2023-07",
-      "n": 296
+      "n": 294
     },
     {
       "examdate": "2023-08",
-      "n": 306
+      "n": 303
     },
     {
       "examdate": "2023-09",
-      "n": 318
+      "n": 315
     },
     {
       "examdate": "2023-10",
-      "n": 322
+      "n": 319
     },
     {
       "examdate": "2023-11",
-      "n": 331
+      "n": 327
     },
     {
       "examdate": "2023-12",
-      "n": 340
+      "n": 335
     },
     {
       "examdate": "2024-01",
-      "n": 347
+      "n": 341
     },
     {
       "examdate": "2024-02",
-      "n": 354
+      "n": 348
     },
     {
       "examdate": "2024-03",
-      "n": 361
+      "n": 355
     },
     {
       "examdate": "2024-04",
-      "n": 364
+      "n": 358
     },
     {
       "examdate": "2024-05",
-      "n": 374
+      "n": 367
     },
     {
       "examdate": "2024-06",
-      "n": 389
+      "n": 379
     },
     {
       "examdate": "2024-07",
-      "n": 404
+      "n": 393
     },
     {
       "examdate": "2024-08",
-      "n": 412
+      "n": 401
     },
     {
       "examdate": "2024-09",
-      "n": 423
+      "n": 410
     },
     {
       "examdate": "2024-10",
-      "n": 437
+      "n": 424
     },
     {
       "examdate": "2024-11",
-      "n": 447
+      "n": 434
     },
     {
       "examdate": "2024-12",
-      "n": 451
+      "n": 438
     },
     {
       "examdate": "2025-01",
-      "n": 458
+      "n": 445
     },
     {
       "examdate": "2025-02",
-      "n": 464
+      "n": 451
     },
     {
       "examdate": "2025-03",
-      "n": 469
+      "n": 456
     },
     {
       "examdate": "2025-04",
-      "n": 475
+      "n": 461
     },
     {
       "examdate": "2025-05",
-      "n": 482
+      "n": 468
     },
     {
       "examdate": "2025-06",
-      "n": 488
+      "n": 474
     },
     {
       "examdate": "2025-07",
-      "n": 496
+      "n": 481
     },
     {
       "examdate": "2025-08",
-      "n": 507
+      "n": 492
     },
     {
       "examdate": "2025-09",
-      "n": 516
+      "n": 501
     },
     {
       "examdate": "2025-10",
-      "n": 526
+      "n": 511
     },
     {
       "examdate": "2025-11",
-      "n": 532
+      "n": 516
     },
     {
       "examdate": "2025-12",
-      "n": 536
+      "n": 518
     },
     {
       "examdate": "2026-01",
-      "n": 538
+      "n": 520
     },
     {
       "examdate": "2026-02",
-      "n": 546
+      "n": 527
     },
     {
       "examdate": "2026-03",
-      "n": 552
+      "n": 533
     },
     {
       "examdate": "2026-04",
-      "n": 558
+      "n": 536
     },
     {
       "examdate": "2026-05",
-      "n": 562
+      "n": 540
     },
     {
       "examdate": "2026-06",
-      "n": 564
+      "n": 542
     },
     {
       "examdate": "2026-07",
-      "n": 567
+      "n": 544
     },
     {
       "examdate": "2026-08",
-      "n": 568
+      "n": 545
     }
   ],
   "age": {
@@ -323,35 +323,35 @@
       "event_code": "+ 1 Cycle2 (Total 33)",
       "examdate": "Aug 05",
       "n": 33,
-      "color": "var(--accent-red)"
+      "color": "var(--accent-green)"
     },
     {
       "site_initials": "UCAM",
       "event_code": "+ 1 Cycle3 (Total 20)",
       "examdate": "Aug 03",
       "n": 20,
-      "color": "var(--accent-amber)"
+      "color": "var(--accent-blue)"
     },
     {
       "site_initials": "NYSIBRDD",
       "event_code": "+ 1 Cycle1 (Total 80)",
       "examdate": "Aug 01",
       "n": 80,
-      "color": "var(--accent-green)"
+      "color": "purple"
     },
     {
       "site_initials": "UWI",
       "event_code": "+ 1 Cycle2 (Total 62)",
       "examdate": "Jul 30",
       "n": 62,
-      "color": "purple"
+      "color": "var(--accent-red)"
     },
     {
       "site_initials": "UPITT",
       "event_code": "+ 1 Cycle1 (Total 57)",
       "examdate": "Jul 29",
       "n": 57,
-      "color": "var(--accent-blue)"
+      "color": "var(--accent-amber)"
     }
   ]
 }
