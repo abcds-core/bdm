@@ -23,7 +23,7 @@
     {
       "key": "ltfu",
       "label": "Lost to Follow Up",
-      "value": 3,
+      "value": 19,
       "color": "amber"
     }
   ],
@@ -323,7 +323,7 @@
       "event_code": "+ 1 Cycle2 (Total 33)",
       "examdate": "Aug 05",
       "n": 33,
-      "color": "var(--accent-green)"
+      "color": "var(--accent-red)"
     },
     {
       "site_initials": "UCAM",
@@ -337,21 +337,21 @@
       "event_code": "+ 1 Cycle1 (Total 80)",
       "examdate": "Aug 01",
       "n": 80,
-      "color": "purple"
+      "color": "var(--accent-green)"
     },
     {
       "site_initials": "UWI",
       "event_code": "+ 1 Cycle2 (Total 62)",
       "examdate": "Jul 30",
       "n": 62,
-      "color": "var(--accent-red)"
+      "color": "var(--accent-amber)"
     },
     {
       "site_initials": "UPITT",
       "event_code": "+ 1 Cycle1 (Total 57)",
       "examdate": "Jul 29",
       "n": 57,
-      "color": "var(--accent-amber)"
+      "color": "purple"
     }
   ]
 }
