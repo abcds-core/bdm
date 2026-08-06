@@ -1,0 +1,323 @@
+.tpb {
+  color: #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Title field */
+.tpb__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.tpb__field label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #94a3b8;
+}
+
+.tpb__input {
+  background: #111827;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  padding: 0.55rem 0.75rem;
+  color: #f1f5f9;
+  font-size: 0.88rem;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.tpb__input:focus {
+  border-color: #60a5fa;
+}
+
+/* Compact toolbar: guest inputs + add + generate, one line */
+.tpb__toolbar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tpb__input--sm {
+  width: 160px;
+  flex: 0 1 160px;
+  padding: 0.45rem 0.65rem;
+  font-size: 0.82rem;
+}
+
+.tpb__add-guest-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 0.45rem 0.75rem;
+  color: #e2e8f0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s ease;
+}
+
+.tpb__add-guest-btn:hover {
+  background: #263449;
+}
+
+.tpb__generate-btn {
+  margin-left: auto;
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.1rem;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s ease;
+  margin-right: 1.5rem;
+}
+
+.tpb__generate-btn:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.tpb__generate-btn:disabled {
+  background: #334155;
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+/* Shared heading/empty state */
+.tpb__heading {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #64748b;
+  margin: 0 0 0.6rem;
+}
+
+.tpb__empty {
+  font-size: 0.82rem;
+  color: #64748b;
+  margin: 0 0 0.75rem;
+}
+
+/* Team pool: small cards, not full width */
+.tpb__pool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, max-content));
+  column-gap: 2.5rem;
+  row-gap: 0.5rem;
+  justify-content: center;
+}
+
+.tpb__pool-card {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #111827;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  padding: 0.45rem 0.6rem;
+  max-width: 220px;
+  transition: border-color 0.15s ease;
+}
+
+.tpb__pool-card:hover {
+  border-color: #334155;
+}
+
+.tpb__pool-card-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  margin-left: 1.5rem;
+}
+
+.tpb__name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #f1f5f9;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tpb__org {
+  font-size: 0.72rem;
+  color: #94a3b8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tpb__icon-btn {
+  background: transparent;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0.2rem;
+  border-radius: 6px;
+  flex-shrink: 0;
+  transition:
+    color 0.15s ease,
+    background 0.15s ease;
+}
+
+.tpb__icon-btn:hover {
+  color: #f1f5f9;
+  background: #1e293b;
+}
+
+/* Post-it note board */
+.tpb__notes-section {
+  background: #0b1220;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.tpb__notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  padding: 0.5rem;
+}
+
+.tpb__note {
+  --rotate: 0deg;
+  width: 96px;
+  min-height: 84px;
+  padding: 0.4rem 0.45rem;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  cursor: grab;
+  transform: rotate(var(--rotate));
+  box-shadow:
+    0 6px 14px rgba(0, 0, 0, 0.35),
+    0 1px 0 rgba(255, 255, 255, 0.15) inset;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+  color: #1f2937;
+}
+
+.tpb__note::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.35);
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  border-radius: 2px;
+}
+
+.tpb__note {
+  position: relative;
+}
+
+.tpb__note:hover {
+  transform: rotate(0deg) translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
+}
+
+.tpb__note--dragging {
+  opacity: 0.5;
+}
+
+.note--amber {
+  background: #fde68a;
+}
+.note--sky {
+  background: #bae6fd;
+}
+.note--rose {
+  background: #fecdd3;
+}
+.note--mint {
+  background: #bbf7d0;
+}
+.note--violet {
+  background: #ddd6fe;
+}
+
+.tpb__note-top {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.tpb__note-grip {
+  color: rgba(31, 41, 55, 0.45);
+}
+
+.tpb__note-num {
+  font-size: 0.6rem;
+  font-weight: 800;
+  color: rgba(31, 41, 55, 0.6);
+}
+
+.tpb__note-remove {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: rgba(31, 41, 55, 0.5);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0.1rem;
+  border-radius: 4px;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.tpb__note-remove:hover {
+  background: rgba(31, 41, 55, 0.12);
+  color: #1f2937;
+}
+
+.tpb__note-name {
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.tpb__note-org {
+  font-size: 0.6rem;
+  color: rgba(31, 41, 55, 0.75);
+  line-height: 1.2;
+}
+
+.tpb__guest-tag {
+  color: #7c3aed;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Mobile */
+@media (max-width: 560px) {
+  .tpb__toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .tpb__input--sm {
+    width: 100%;
+  }
+  .tpb__generate-btn {
+    margin-left: 0;
+  }
+}

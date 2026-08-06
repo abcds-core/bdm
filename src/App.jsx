@@ -4,7 +4,8 @@ import Sidebar from "./components/Sidebar";
 import Topbar from "./components/Topbar";
 import Dashboard from "./pages/Dashboard";
 import Codebook from "./pages/Codebook";
-import Vignettes from "./pages/Vignettes";
+import Resources from "./pages/Resources";
+import TitlePage from "./pages/TitlePage";
 
 import Team from "./pages/Team";
 import DataUpdates from "./pages/DataUpdates";
@@ -27,9 +28,10 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/codebook" element={<Codebook />} />
-            {/* <Route path="/vignettes" element={<Vignettes />} /> */}
             <Route path="/team" element={<Team />} />
             <Route path="/data-updates" element={<DataUpdates />} />
+            <Route path="/title-page" element={<TitlePage />} />
+            <Route path="/resources" element={<Resources />} />
           </Routes>
         </div>
       </div>

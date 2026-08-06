@@ -1,17 +1,28 @@
 import team from "../data/team.json";
 import { Link as LinkIcon } from "lucide-react";
+import { getInitials, getLastName } from "../utils/team.js";
 import "./TeamMembers.css";
 
 export default function TeamMembers() {
+  const sortedTeam = [...team].sort((a, b) =>
+    getLastName(a.name).localeCompare(getLastName(b.name)),
+  );
+
   return (
     <div className="team-members">
-      {team.map((member, index) => (
+      {sortedTeam.map((member, index) => (
         <div key={index} className="team-member">
-          <img
-            src={member.image}
-            alt={member.name}
-            className="team-member__avatar"
-          />
+          {member.image ? (
+            <img
+              src={member.image}
+              alt={member.name}
+              className="team-member__avatar"
+            />
+          ) : (
+            <div className="team-member__avatar team-member__avatar--initials">
+              {getInitials(member.name)}
+            </div>
+          )}
 
           <div className="team-member__info">
             <div className="team-member__name-row">

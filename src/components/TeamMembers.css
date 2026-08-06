@@ -31,6 +31,16 @@
   border: 2px solid var(--surface-alt);
 }
 
+.team-member__avatar--initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1e293b;
+  color: #e2e8f0;
+  font-weight: 600;
+  font-size: 36px;
+}
+
 .team-member__info {
   min-width: 0; /* allows text truncation to work inside a flex child */
   text-align: right;

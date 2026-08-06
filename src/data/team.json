@@ -1,23 +1,107 @@
 [
   {
-    "name": "Brian Helsel",
+    "name": "Brian C. Helsel, PhD",
     "link": "https://www.kumc.edu/bhelsel.html",
     "title": "Assistant Professor",
     "organization": "University of Kansas Medical Center",
     "image": "https://github.com/bhelsel/presentationsR/raw/main/inst/images/helselProfile.jpg"
   },
   {
-    "name": "Howard Andrews",
+    "name": "Howard Andrews, PhD",
     "link": "https://www.columbiapsychiatry.org/profile/howard-f-andrews-phd",
     "title": "Associate Professor",
     "organization": "Columbia University",
     "image": "https://www.columbiapsychiatry.org/sites/default/files/styles/cola_media_520/public/cups-profile/headshot/5247c0f0-e3a3-11ea-b94c-313f6b4d624c.jpg?itok=bgfaq8Ye"
   },
   {
-    "name": "Dana Tudorascu",
+    "name": "Dana Tudorascu, PhD",
     "link": "https://www.psychiatry.pitt.edu/about-us/our-people/faculty/dana-l-tudorascu-phd",
     "title": "Associate Professor",
     "organization": "University of Pittsburgh",
     "image": "https://www.psychiatry.pitt.edu/sites/default/files/styles/faculty_headshot/public/2021-08/TudorascuDana.png?itok=p1xW_qOH"
+  },
+  {
+    "name": "Benjamin Handen, PhD",
+    "link": "https://www.psychiatry.pitt.edu/about-us/our-people/faculty/benjamin-l-handen-phd",
+    "title": "Professor",
+    "organization": "University of Pittsburgh",
+    "image": "https://www.psychiatry.pitt.edu/sites/default/files/styles/faculty_headshot/public/2026-06/Handen%2C%20Ben.jpg?itok=4jF_wABI"
+  },
+  {
+    "name": "Bradley T. Christian, PhD",
+    "link": "https://www.psychiatry.wisc.edu/staff/christian-bradley",
+    "title": "Professor",
+    "organization": "University of Wisconsin-Madison",
+    "image": "https://www.psychiatry.wisc.edu/wp-content/uploads/2018/06/pi-Christian-Brad-2012-sq-300x300.jpg"
+  },
+  {
+    "name": "Elizabeth Head, PhD",
+    "link": "https://cnlm.uci.edu/elizabeth-head",
+    "title": "Professor",
+    "organization": "University of California, Irvine",
+    "image": "https://cnlm.uci.edu/wp-content/uploads/sites/38/bb-plugin/cache/Elizabeth-Head-circle-3937a3d614226a2ca676022d7b939d8d-5f85f981a80b6.jpg"
+  },
+  {
+    "name": "Mark Mapstone, PhD",
+    "link": "https://cnlm.uci.edu/mapstone",
+    "title": "Professor",
+    "organization": "University of California, Irvine",
+    "image": "https://cnlm.uci.edu/wp-content/uploads/sites/38/bb-plugin/cache/Mark-Mapstone-200x200-1-e1587502357844-circle-da3ba14610b34103cd84c03c0bd768bb-5ac7abb623a65.jpg"
+  },
+  {
+    "name": "Herminia Diana Rosas, MD",
+    "link": "https://researchers.mgh.harvard.edu/profile/3171895/Herminia-Rosas",
+    "title": "Professor",
+    "organization": "Massachusetts General Hospital / Harvard University",
+    "image": ""
+  },
+  {
+    "name": "Florence Lai, MD",
+    "link": "https://www.massgeneral.org/children/doctors/16689/florence-lai",
+    "title": "Assistant Professor",
+    "organization": "Massachusetts General Hospital / Harvard University",
+    "image": "https://px.massgeneral.connecthealthcare.com/Custom/Photos/HiRes/5037.jpg"
+  },
+  {
+    "name": "Joseph H. Lee, DrPH",
+    "link": "https://www.neurology.columbia.edu/profile/joseph-h-lee-drph",
+    "title": "Professor",
+    "organization": "Columbia University",
+    "image": "https://www.neurology.columbia.edu/sites/default/files/styles/cola_media_520/public/cups-profile/headshot/19dc6df0-903c-11f1-932e-6d9b0b610ef1.jpg?itok=zV_0s7Qs"
+  },
+  {
+    "name": "Sharon Krinsky-McHale, PhD",
+    "link": "https://opwdd.ny.gov/institute-basic-research-developmental-disabilities",
+    "title": "",
+    "organization": "New York State Institute for Basic Research in Developmental Disabilities",
+    "image": ""
+  },
+  {
+    "name": "Frederick A. Schmitt, PhD",
+    "link": "https://medicine.uky.edu/users/fascom",
+    "title": "Professor",
+    "organization": "University of Kentucky",
+    "image": "https://medicine.uky.edu/sites/default/files/styles/profile_page_image/public/user/images/picture-5518-1650669552.png?h=cc7a4896&itok=K3-10VhY"
+  },
+  {
+    "name": "Jordan P. Harp, PhD",
+    "link": "https://ukhealthcare.uky.edu/doctors/jordan-harp",
+    "title": "Associate Professor",
+    "organization": "University of Kentucky",
+    "image": "https://ukhealthcare.uky.edu/sites/default/files/styles/large/public/harp_jordanp_phd.jpg?itok=soPLTRgc"
+  },
+  {
+    "name": "Christy L. Hom, PhD",
+    "link": "https://faculty.uci.edu/profile/?facultyId=6038",
+    "title": "Associate Clinical Professor",
+    "organization": "University of California, Irvine",
+    "image": "https://faculty.uci.edu/get_image?facultyId=6038"
+  },
+  {
+    "name": "Sigan Hartley, PhD",
+    "link": "https://www.waisman.wisc.edu/staff/hartley-sigan",
+    "title": "Professor",
+    "organization": "University of Wisconsin-Madison",
+    "image": "https://www.waisman.wisc.edu/wp-content/uploads/sites/699/2018/06/Hartley-Sigan-400x400-1.jpg"
   }
 ]

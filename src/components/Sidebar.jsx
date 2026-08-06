@@ -6,6 +6,7 @@ import {
   UserCog,
   Settings,
   ExternalLink,
+  BookOpen,
 } from "lucide-react";
 import "./Sidebar.css";
 import abcdsLogo from "/abcds.png";
@@ -13,19 +14,10 @@ import abcdsLogo from "/abcds.png";
 const NAV_ITEMS = [
   { label: "Dashboard", icon: LayoutDashboard, path: "/" },
   { label: "Codebook", icon: FileText, path: "/codebook" },
-  // { label: "Vignettes", icon: FileText, path: "/vignettes" },
-  {
-    label: "Documentation",
-    icon: ClipboardList,
-    href: "https://abcds-core.github.io/documentation/",
-  },
-  {
-    label: "KBIT-2 Calculator",
-    icon: ClipboardList,
-    href: "https://bhelsel.github.io/kbit2/",
-  },
+  { label: "Resources", icon: BookOpen, path: "/resources" },
   { label: "Team", icon: UserCog, path: "/team" },
   { label: "Data Updates", icon: Settings, path: "/data-updates" },
+  { label: "Title Page", icon: Settings, path: "/title-page" },
 ];
 
 export default function Sidebar() {
