@@ -69,11 +69,15 @@ export default function TitlePageBuilder({ teamMembers = [], onGenerate }) {
   function handleGenerate() {
     onGenerate?.({
       title: title.trim(),
-      authors: ordered.map(({ name, organization, isGuest }) => ({
-        name,
-        organization,
-        isGuest,
-      })),
+      authors: ordered.map(
+        ({ name, center, department, organization, isGuest }) => ({
+          name,
+          center,
+          department,
+          organization,
+          isGuest,
+        }),
+      ),
     });
   }
   return (

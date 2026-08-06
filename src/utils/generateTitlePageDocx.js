@@ -11,21 +11,28 @@ import { ACKNOWLEDGEMENTS } from "../text/acknowledgements";
 const FONT = "Arial";
 const BASE_SIZE = 22; // 11pt (docx sizes are in half-points)
 
+function buildAffiliation({ center, department, organization }) {
+  return [center, department, organization]
+    .map((part) => (part || "").trim())
+    .filter(Boolean)
+    .join(", ");
+}
+
 export async function generateTitlePageDocx({ title, authors }) {
   // 1. Assign each unique organization a number, in order of first appearance
   const affiliationNumbers = new Map();
-  authors.forEach(({ organization }) => {
-    const org = (organization || "").trim();
-    if (org && !affiliationNumbers.has(org)) {
-      affiliationNumbers.set(org, affiliationNumbers.size + 1);
+  authors.forEach((author) => {
+    const affiliation = buildAffiliation(author);
+    if (affiliation && !affiliationNumbers.has(affiliation)) {
+      affiliationNumbers.set(affiliation, affiliationNumbers.size + 1);
     }
   });
 
   // 2. Build the inline author line: Name¹, Name², Name¹, and Name³
   const authorRuns = [];
   authors.forEach((author, index) => {
-    const org = (author.organization || "").trim();
-    const number = org ? affiliationNumbers.get(org) : null;
+    const affiliation = buildAffiliation(author);
+    const number = affiliation ? affiliationNumbers.get(affiliation) : null;
 
     authorRuns.push(
       new TextRun({
@@ -61,7 +68,7 @@ export async function generateTitlePageDocx({ title, authors }) {
 
   // 3. Build the numbered affiliation list below the authors
   const affiliationParagraphs = Array.from(affiliationNumbers.entries()).map(
-    ([org, number]) =>
+    ([affiliation, number]) =>
       new Paragraph({
         alignment: AlignmentType.LEFT,
         spacing: { after: 40 },
@@ -73,7 +80,7 @@ export async function generateTitlePageDocx({ title, authors }) {
             size: BASE_SIZE,
           }),
           new TextRun({
-            text: ` ${org}`,
+            text: ` ${affiliation}`,
             font: FONT,
             size: BASE_SIZE,
           }),
@@ -132,6 +139,17 @@ export async function generateTitlePageDocx({ title, authors }) {
                 size: BASE_SIZE,
               }),
               ...authorRuns,
+              new TextRun({
+                text: " for the Alzheimer's Biomarkers Consortium-Down Syndrome (ABC-DS) Investigators",
+                font: FONT,
+                size: BASE_SIZE,
+              }),
+              new TextRun({
+                text: "*",
+                superScript: true,
+                font: FONT,
+                size: BASE_SIZE,
+              }),
             ],
           }),
           new Paragraph({

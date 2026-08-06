@@ -3,6 +3,8 @@
     "name": "Brian C. Helsel, PhD",
     "link": "https://www.kumc.edu/bhelsel.html",
     "title": "Assistant Professor",
+    "department": "Neurology",
+    "center": "University of Kansas Alzheimer’s Disease Center",
     "organization": "University of Kansas Medical Center",
     "image": "https://github.com/bhelsel/presentationsR/raw/main/inst/images/helselProfile.jpg"
   },
@@ -10,6 +12,8 @@
     "name": "Howard Andrews, PhD",
     "link": "https://www.columbiapsychiatry.org/profile/howard-f-andrews-phd",
     "title": "Associate Professor",
+    "department": "Psychiatry",
+    "center": "",
     "organization": "Columbia University",
     "image": "https://www.columbiapsychiatry.org/sites/default/files/styles/cola_media_520/public/cups-profile/headshot/5247c0f0-e3a3-11ea-b94c-313f6b4d624c.jpg?itok=bgfaq8Ye"
   },
@@ -17,6 +21,8 @@
     "name": "Dana Tudorascu, PhD",
     "link": "https://www.psychiatry.pitt.edu/about-us/our-people/faculty/dana-l-tudorascu-phd",
     "title": "Associate Professor",
+    "department": "Psychiatry",
+    "center": "",
     "organization": "University of Pittsburgh",
     "image": "https://www.psychiatry.pitt.edu/sites/default/files/styles/faculty_headshot/public/2021-08/TudorascuDana.png?itok=p1xW_qOH"
   },
@@ -24,6 +30,8 @@
     "name": "Benjamin Handen, PhD",
     "link": "https://www.psychiatry.pitt.edu/about-us/our-people/faculty/benjamin-l-handen-phd",
     "title": "Professor",
+    "department": "Psychiatry",
+    "center": "",
     "organization": "University of Pittsburgh",
     "image": "https://www.psychiatry.pitt.edu/sites/default/files/styles/faculty_headshot/public/2026-06/Handen%2C%20Ben.jpg?itok=4jF_wABI"
   },
@@ -31,6 +39,8 @@
     "name": "Bradley T. Christian, PhD",
     "link": "https://www.psychiatry.wisc.edu/staff/christian-bradley",
     "title": "Professor",
+    "department": "Psychiatry",
+    "center": "Waisman Center",
     "organization": "University of Wisconsin-Madison",
     "image": "https://www.psychiatry.wisc.edu/wp-content/uploads/2018/06/pi-Christian-Brad-2012-sq-300x300.jpg"
   },
@@ -38,6 +48,8 @@
     "name": "Elizabeth Head, PhD",
     "link": "https://cnlm.uci.edu/elizabeth-head",
     "title": "Professor",
+    "department": "Pathology and Laboratory Medicine",
+    "center": "UC Irvine Center for the Neurobiology of Learning and Memory",
     "organization": "University of California, Irvine",
     "image": "https://cnlm.uci.edu/wp-content/uploads/sites/38/bb-plugin/cache/Elizabeth-Head-circle-3937a3d614226a2ca676022d7b939d8d-5f85f981a80b6.jpg"
   },
@@ -45,6 +57,8 @@
     "name": "Mark Mapstone, PhD",
     "link": "https://cnlm.uci.edu/mapstone",
     "title": "Professor",
+    "department": "Neurology",
+    "center": "UC Irvine Center for the Neurobiology of Learning and Memory",
     "organization": "University of California, Irvine",
     "image": "https://cnlm.uci.edu/wp-content/uploads/sites/38/bb-plugin/cache/Mark-Mapstone-200x200-1-e1587502357844-circle-da3ba14610b34103cd84c03c0bd768bb-5ac7abb623a65.jpg"
   },
@@ -52,13 +66,17 @@
     "name": "Herminia Diana Rosas, MD",
     "link": "https://researchers.mgh.harvard.edu/profile/3171895/Herminia-Rosas",
     "title": "Professor",
+    "department": "Neurology",
+    "center": "",
     "organization": "Massachusetts General Hospital / Harvard University",
-    "image": ""
+    "image": "https://www.massgeneral.org/assets/MGH/images/neurology/team/herminia-rosas-120x120.png"
   },
   {
     "name": "Florence Lai, MD",
     "link": "https://www.massgeneral.org/children/doctors/16689/florence-lai",
     "title": "Assistant Professor",
+    "department": "Neurology",
+    "center": "",
     "organization": "Massachusetts General Hospital / Harvard University",
     "image": "https://px.massgeneral.connecthealthcare.com/Custom/Photos/HiRes/5037.jpg"
   },
@@ -66,20 +84,26 @@
     "name": "Joseph H. Lee, DrPH",
     "link": "https://www.neurology.columbia.edu/profile/joseph-h-lee-drph",
     "title": "Professor",
+    "department": "Epidemiology",
+    "center": "Mailman School of Public Health",
     "organization": "Columbia University",
     "image": "https://www.neurology.columbia.edu/sites/default/files/styles/cola_media_520/public/cups-profile/headshot/19dc6df0-903c-11f1-932e-6d9b0b610ef1.jpg?itok=zV_0s7Qs"
   },
   {
     "name": "Sharon Krinsky-McHale, PhD",
     "link": "https://opwdd.ny.gov/institute-basic-research-developmental-disabilities",
-    "title": "",
+    "title": "Research Scientist",
+    "department": "",
+    "center": "",
     "organization": "New York State Institute for Basic Research in Developmental Disabilities",
-    "image": ""
+    "image": "https://www.actc-ds.org/wp-content/uploads/2020/08/Sharon_Krinsky-McHale.jpg"
   },
   {
     "name": "Frederick A. Schmitt, PhD",
     "link": "https://medicine.uky.edu/users/fascom",
     "title": "Professor",
+    "department": "Neurology",
+    "center": "",
     "organization": "University of Kentucky",
     "image": "https://medicine.uky.edu/sites/default/files/styles/profile_page_image/public/user/images/picture-5518-1650669552.png?h=cc7a4896&itok=K3-10VhY"
   },
@@ -87,6 +111,8 @@
     "name": "Jordan P. Harp, PhD",
     "link": "https://ukhealthcare.uky.edu/doctors/jordan-harp",
     "title": "Associate Professor",
+    "department": "Neurology",
+    "center": "",
     "organization": "University of Kentucky",
     "image": "https://ukhealthcare.uky.edu/sites/default/files/styles/large/public/harp_jordanp_phd.jpg?itok=soPLTRgc"
   },
@@ -94,6 +120,8 @@
     "name": "Christy L. Hom, PhD",
     "link": "https://faculty.uci.edu/profile/?facultyId=6038",
     "title": "Associate Clinical Professor",
+    "department": "Psychiatry & Human Behavior",
+    "center": "",
     "organization": "University of California, Irvine",
     "image": "https://faculty.uci.edu/get_image?facultyId=6038"
   },
@@ -101,7 +129,90 @@
     "name": "Sigan Hartley, PhD",
     "link": "https://www.waisman.wisc.edu/staff/hartley-sigan",
     "title": "Professor",
+    "department": "Human Ecology",
+    "center": "Waisman Center",
     "organization": "University of Wisconsin-Madison",
     "image": "https://www.waisman.wisc.edu/wp-content/uploads/sites/699/2018/06/Hartley-Sigan-400x400-1.jpg"
+  },
+  {
+    "name": "Shahid Zaman, MD, PhD",
+    "link": "https://www.psychiatry.cam.ac.uk/staff/dr-shahid-zaman",
+    "title": "Assistant Professor",
+    "department": "Psychiatry",
+    "center": "Cambridge Intellectual Disability Research Group",
+    "organization": "University of Cambridge",
+    "image": "https://www.actc-ds.org/wp-content/uploads/2019/09/SZaman-headshot-1.jpg"
+  },
+  {
+    "name": "Stephanie Brown, PhD",
+    "link": "https://www.lucy.cam.ac.uk/fellows/dr-stephanie-brown",
+    "title": "Assistant Professor",
+    "department": "Psychiatry",
+    "center": "",
+    "organization": "University of Cambridge",
+    "image": "https://www.lucy.cam.ac.uk/sites/default/files/styles/650x650_scale_and_crop/public/fellow-images/Stephanie%20Brown.jpg?itok=HLrYEjy6"
+  },
+  {
+    "name": "Beau M. Ances, MD, PhD",
+    "link": "https://neurology.wustl.edu/people/beau-ances-md-phd/",
+    "title": "Professor",
+    "department": "Neurology",
+    "center": "",
+    "organization": "Washington University in St. Louis",
+    "image": "https://myds-cache.wustl.edu/qyr/profilepics/bances.webp"
+  },
+  {
+    "name": "Lauren T. Ptomey, PhD",
+    "link": "https://www.kumc.edu/lptomey.html",
+    "title": "Associate Professor",
+    "department": "Internal Medicine",
+    "center": "Division of Physical Activity and Weight Management",
+    "organization": "University of Kansas Medical Center",
+    "image": "https://www.kumc.edu/images/_faculty/ptomey-lauren.jpg"
+  },
+  {
+    "name": "Jeff Burns, MD",
+    "link": "https://www.kumc.edu/jburns2.html",
+    "title": "Professor",
+    "department": "Neurology",
+    "center": "University of Kansas Alzheimer’s Disease Center",
+    "organization": "University of Kansas Medical Center",
+    "image": "https://www.kumc.edu/images/_faculty/burns-jeffrey.jpg"
+  },
+  {
+    "name": "Ann D. Cohen, PhD",
+    "link": "https://www.psychiatry.pitt.edu/about-us/our-people/faculty/ann-d-cohen-phd",
+    "title": "Associate Professor",
+    "department": "Psychiatry",
+    "center": "",
+    "organization": "University of Pittsburgh",
+    "image": "https://www.psychiatry.pitt.edu/sites/default/files/styles/faculty_headshot/public/2017-11/925.JPG?itok=EpGPB0MC"
+  },
+  {
+    "name": "Adam M. Brickman, PhD",
+    "link": "https://www.neurology.columbia.edu/profile/adam-m-brickman-phd",
+    "title": "Professor",
+    "department": "Neurology",
+    "center": "",
+    "organization": "Columbia University",
+    "image": "https://www.neurology.columbia.edu/sites/default/files/styles/cola_media_520/public/cups-profile/headshot/53958390-f91d-11ef-abec-d993314b78db.jpg?itok=eYyWtuiN"
+  },
+  {
+    "name": "Melissa Petersen, PhD",
+    "link": "https://experts.unthsc.edu/en/persons/melissa-petersen/",
+    "title": "Assistant Professor",
+    "department": "Family Medicine and Osteopathic Manipulative Medicine",
+    "center": "",
+    "organization": "University of North Texas Health Science Center",
+    "image": "https://experts.unthsc.edu/files-asset/83905838/Melissa_Peterson_EXPERTS_Profile.jpg?w=320&f=webp"
+  },
+  {
+    "name": "Carol Salas, PsyD",
+    "link": "https://www.aucd.org/directory-contact?id=11665",
+    "title": "Director",
+    "department": "",
+    "center": "Center for Excellence on Developmental Disabilities/IDD",
+    "organization": "Puerto Rico University",
+    "image": "https://systems.aucd.org/directory/62/Carol%20Salas.png"
   }
 ]

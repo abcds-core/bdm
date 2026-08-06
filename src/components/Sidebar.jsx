@@ -7,6 +7,7 @@ import {
   Settings,
   ExternalLink,
   BookOpen,
+  FileSignature,
 } from "lucide-react";
 import "./Sidebar.css";
 import abcdsLogo from "/abcds.png";
@@ -17,7 +18,7 @@ const NAV_ITEMS = [
   { label: "Resources", icon: BookOpen, path: "/resources" },
   { label: "Team", icon: UserCog, path: "/team" },
   { label: "Data Updates", icon: Settings, path: "/data-updates" },
-  { label: "Title Page", icon: Settings, path: "/title-page" },
+  { label: "Build Title Page", icon: FileSignature, path: "/title-page" },
 ];
 
 export default function Sidebar() {
