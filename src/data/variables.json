@@ -1,54 +1,38 @@
 {
-  "Health History": [
-    {
-      "text": "Allergies",
-      "variables": [
-        "hh_allerenv",
-        "hh_allerenvage",
-        "hh_allerfood",
-        "hh_alerfoodage",
-        "hh_allergdrug",
-        "hh_allergdrugage"
-      ]
-    },
-    {
-      "text": "Cancer",
-      "variables": ["hh_cancer", "hh_cancer_surgery", "hh_leuk", "hh_leukage"]
-    },
-    {
-      "text": "Cardiovascular",
-      "variables": [
-        "hh_chd",
-        "hh_chd_type",
-        "hh_cardiac_surgery",
-        "hh_hypertension",
-        "hh_hyoptension"
-      ]
-    },
-    {
-      "text": "Diabetes",
-      "variables": ["hh_diabetes", "hh_diabetesage", "hh_diabetes_type"]
-    },
-    {
-      "text": "Thyroid",
-      "variables": ["hh_hypothyroidism", "hh_hyperthyroidism"]
-    }
-  ],
-  "Medications Health History Worksheet": [
-    { "text": "Alzheimer's", "variables": ["cmalz", "cmalzex"] },
-    { "text": "Antihistamine", "variables": ["cmah"] },
-    {
-      "text": "Cardiovascular",
-      "variables": ["cmhyp", "cmhrt"]
-    },
-    { "text": "Cholesterol", "variables": ["cmchol", "cmstn"] },
-    { "text": "Epilepsy", "variables": ["cmepi"] },
-    {
-      "text": "Mental Health",
-      "variables": ["cmdep", "cmanx", "cmpsy", "cmmood"]
-    },
-    { "text": "Proton Pump Inhibitor", "variables": ["ccppi"] },
-    { "text": "Thyroid", "variables": ["cmthy"] }
-  ],
-  "Cognition": []
+  "Health History": {
+    "Allergies": [
+      "hh_allerenv",
+      "hh_allerenvage",
+      "hh_allerfood",
+      "hh_alerfoodage",
+      "hh_allergdrug",
+      "hh_allergdrugage"
+    ],
+    "Cancer": ["hh_cancer", "hh_cancer_surgery", "hh_leuk", "hh_leukage"],
+    "Cardiovascular": [
+      "hh_chd",
+      "hh_chd_type",
+      "hh_cardiac_surgery",
+      "hh_hypertension",
+      "hh_hyoptension"
+    ],
+    "Diabetes": ["hh_diabetes", "hh_diabetesage", "hh_diabetes_type"],
+    "Thyroid": ["hh_hypothyroidism", "hh_hyperthyroidism"]
+  },
+
+  "Medications": {
+    "Alzheimer's": ["cmalz", "cmalzex"],
+    "Antihistamine": ["cmah"],
+    "Cardiovascular": ["cmhyp", "cmhrt"],
+    "Cholesterol": ["cmchol", "cmstn"],
+    "Epilepsy": ["cmepi"],
+    "Mental Health": ["cmdep", "cmanx", "cmpsy", "cmmood"],
+    "Proton Pump Inhibitor": ["ccppi"],
+    "Thyroid": ["cmthy"]
+  },
+
+  "Cognition": {
+    "Down Syndrome Mental Status Exam": ["dsme1", "dsmse_to2"],
+    "Cued Recall": ["frs", "crs", "trs"]
+  }
 }

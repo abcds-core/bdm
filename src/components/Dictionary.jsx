@@ -21,9 +21,15 @@ function csvEscape(val) {
   return /[",\n]/.test(str) ? `"${str.replace(/"/g, '""')}"` : str;
 }
 
-const DOMAINS = [...new Set(codebook.map((d) => d.dd_crf_label))].sort((a, b) =>
-  a.localeCompare(b, undefined, { sensitivity: "base" }),
-);
+const DOMAIN_NAMES = {
+  "Medications Health History Worksheet": "Medications",
+};
+
+const changeDomainName = (domain) => DOMAIN_NAMES[domain] || domain;
+
+const DOMAINS = [
+  ...new Set(codebook.map((d) => changeDomainName(d.dd_crf_label))),
+].sort((a, b) => a.localeCompare(b, undefined, { sensitivity: "base" }));
 
 export default function Dictionary() {
   const tableRef = useRef(null);
@@ -49,28 +55,58 @@ export default function Dictionary() {
   ];
 
   useEffect(() => {
-    if (!selectedDomain) {
-      setSelectedVariables([]);
+    if (selectedDomain === "") {
+      // All domains: show one button for each domain
+      setSelectedVariables(
+        Object.keys(variables).map((domain, index) => ({
+          text: domain,
+          domain: domain,
+          colorClass: buttonColors[index % buttonColors.length],
+        })),
+      );
       return;
     }
 
+    // Specific domain: show its categories
     const shuffledColors = [...buttonColors].sort(() => Math.random() - 0.5);
 
-    const domainVariables = variables[selectedDomain] || [];
+    const domainVariables = variables[selectedDomain] || {};
 
     setSelectedVariables(
-      domainVariables.map((item, index) => ({
-        ...item,
+      Object.keys(domainVariables).map((category, index) => ({
+        text: category,
+        variables: domainVariables[category],
         colorClass: shuffledColors[index % shuffledColors.length],
       })),
     );
-  }, [selectedDomain, variables]);
+  }, [selectedDomain]);
+
+  const selectDomain = (domain) => {
+    const fields = Object.values(variables[domain] || {}).flat();
+
+    selectFields(fields);
+  };
+
+  const selectFields = (fields) => {
+    fields.forEach((field) => {
+      const rows = tabulatorRef.current
+        .getRows()
+        .filter((row) => row.getData().field_name === field);
+
+      rows.forEach((row) => row.select());
+    });
+  };
 
   const cleanedCodebook = codebook
     .filter((item) => !excludedFields.includes(item.field_name))
     .map((item) => ({
       ...item,
-      field_question: item.field_question?.replace(/^\d+\.\s*/, ""),
+      _original_dd_crf_label: item.dd_crf_label,
+      dd_crf_label: changeDomainName(item.dd_crf_label),
+      field_question: item.field_question
+        ?.replace(/^\d+[a-zA-Z]?\.\s*/, "")
+        // .replace(/^Set\s+[A-Za-z]\s*[-:]\s*/, "") Needs adjusting....
+        .trim(),
     }));
 
   useEffect(() => {
@@ -122,7 +158,18 @@ export default function Dictionary() {
       alert("Select at least one variable.");
       return;
     }
-    const csv = rowsToCsv(selectedRows);
+
+    // Changes dd_crf_label back to the original
+    const downloadRows = selectedRows.map((row) => {
+      const { _original_dd_crf_label, ...downloadRow } = row;
+
+      return {
+        ...downloadRow,
+        dd_crf_label: _original_dd_crf_label,
+      };
+    });
+
+    const csv = rowsToCsv(downloadRows);
     const blob = new Blob([csv], { type: "text/csv" });
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
@@ -132,32 +179,26 @@ export default function Dictionary() {
     URL.revokeObjectURL(url);
   }
 
-  const selectFields = (fields) => {
-    fields.forEach((field) => {
-      const rows = tabulatorRef.current
-        .getRows()
-        .filter((row) => row.getData().field_name === field);
-
-      rows.forEach((row) => row.select());
-    });
-  };
-
   return (
     <div className="app__content">
+      {/* Selected Domains */}
+      {selectedVariables.length > 0 && <p>Quick Select Buttons</p>}
+      <div className="quickButtonsContainer">
+        {selectedVariables.map((item, index) => (
+          <button
+            key={index}
+            onClick={() =>
+              selectedDomain === ""
+                ? selectDomain(item.domain)
+                : selectFields(item.variables)
+            }
+            className={`quickButton ${item.colorClass}`}
+          >
+            {item.text}
+          </button>
+        ))}
+      </div>
       <Panel title="Browse study variables and export a selection">
-        {/* Selected Domains */}
-        <div className="quickButtonsContainer">
-          {selectedVariables.map((item, index) => (
-            <button
-              key={index}
-              onClick={() => selectFields(item.variables)}
-              className={`quickButton ${item.colorClass}`}
-            >
-              {item.text}
-            </button>
-          ))}
-        </div>
-
         <div className="dictionary__toolbar">
           <div className="dictionary__field">
             <label htmlFor="domain">Domain</label>
