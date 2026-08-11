@@ -168,3 +168,98 @@
   border-radius: 6px !important;
   padding: 0.4rem 0.6rem !important;
 }
+
+/* Quick Question Buttons */
+.quickButtonsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.quickButton {
+  width: 100%;
+  min-width: 0;
+  font-size: 0.75rem;
+  color: #334155;
+  padding: 0.65rem 0.75rem;
+  border-radius: 0.375rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+.quickButton:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+.quickButton:focus {
+  outline: 2px solid #94a3b8;
+  outline-offset: 2px;
+}
+
+.quickButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Quick button color variants */
+
+.quickButtonGreen {
+  background-color: #d1fae5;
+  border-color: #a7f3d0;
+}
+
+.quickButtonGreen:hover:not(:disabled) {
+  background-color: #a7f3d0;
+}
+
+.quickButtonPurple {
+  background-color: #ede9fe;
+  border-color: #ddd6fe;
+}
+
+.quickButtonPurple:hover:not(:disabled) {
+  background-color: #ddd6fe;
+}
+
+.quickButtonBlue {
+  background-color: #dbeafe;
+  border-color: #bfdbfe;
+}
+
+.quickButtonBlue:hover:not(:disabled) {
+  background-color: #bfdbfe;
+}
+
+.quickButtonOrange {
+  background-color: #ffedd5;
+  border-color: #fed7aa;
+}
+
+.quickButtonOrange:hover:not(:disabled) {
+  background-color: #fed7aa;
+}
+
+.quickButtonRed {
+  background-color: #fee2e2;
+  border-color: #fecaca;
+}
+
+.quickButtonRed:hover:not(:disabled) {
+  background-color: #fecaca;
+}
+
+.quickButtonPink {
+  background-color: #fce7f3;
+  border-color: #fbcfe8;
+}
+
+.quickButtonPink:hover:not(:disabled) {
+  background-color: #fbcfe8;
+}

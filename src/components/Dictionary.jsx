@@ -5,6 +5,7 @@ import Panel from "../components/Panel";
 import "tabulator-tables/dist/css/tabulator.min.css";
 import "./Dictionary.css";
 import codebook from "../data/codebook.json";
+import variables from "../data/variables.json";
 
 function rowsToCsv(rows) {
   const headers = Object.keys(rows[0]);
@@ -28,15 +29,56 @@ export default function Dictionary() {
   const tableRef = useRef(null);
   const tabulatorRef = useRef(null);
   const [selectedDomain, setSelectedDomain] = useState("");
+  const [selectedVariables, setSelectedVariables] = useState([]);
   const [selectedCount, setSelectedCount] = useState(0);
+
+  const excludedFields = [
+    "subject_label",
+    "event_sequence",
+    "language_code",
+    "language_label",
+  ];
+
+  const buttonColors = [
+    "quickButtonGreen",
+    "quickButtonPurple",
+    "quickButtonBlue",
+    "quickButtonOrange",
+    "quickButtonRed",
+    "quickButtonPink",
+  ];
+
+  useEffect(() => {
+    if (!selectedDomain) {
+      setSelectedVariables([]);
+      return;
+    }
+
+    const shuffledColors = [...buttonColors].sort(() => Math.random() - 0.5);
+
+    const domainVariables = variables[selectedDomain] || [];
+
+    setSelectedVariables(
+      domainVariables.map((item, index) => ({
+        ...item,
+        colorClass: shuffledColors[index % shuffledColors.length],
+      })),
+    );
+  }, [selectedDomain, variables]);
+
+  const cleanedCodebook = codebook
+    .filter((item) => !excludedFields.includes(item.field_name))
+    .map((item) => ({
+      ...item,
+      field_question: item.field_question?.replace(/^\d+\.\s*/, ""),
+    }));
 
   useEffect(() => {
     tabulatorRef.current = new Tabulator(tableRef.current, {
-      data: codebook,
+      data: cleanedCodebook,
       selectableRows: true,
       height: "480px",
       movableColumns: true,
-      initialSort: [{ column: "field_name", dir: "asc" }],
       columnDefaults: { tooltip: true },
       columns: [
         {
@@ -45,6 +87,9 @@ export default function Dictionary() {
           hozAlign: "center",
           headerSort: false,
           width: 44,
+          titleFormatterParams: {
+            rowRange: "active",
+          },
         },
         { title: "Variable", field: "field_name", widthGrow: 1.2 },
         { title: "Label", field: "field_question", widthGrow: 2 },
@@ -87,9 +132,32 @@ export default function Dictionary() {
     URL.revokeObjectURL(url);
   }
 
+  const selectFields = (fields) => {
+    fields.forEach((field) => {
+      const rows = tabulatorRef.current
+        .getRows()
+        .filter((row) => row.getData().field_name === field);
+
+      rows.forEach((row) => row.select());
+    });
+  };
+
   return (
     <div className="app__content">
       <Panel title="Browse study variables and export a selection">
+        {/* Selected Domains */}
+        <div className="quickButtonsContainer">
+          {selectedVariables.map((item, index) => (
+            <button
+              key={index}
+              onClick={() => selectFields(item.variables)}
+              className={`quickButton ${item.colorClass}`}
+            >
+              {item.text}
+            </button>
+          ))}
+        </div>
+
         <div className="dictionary__toolbar">
           <div className="dictionary__field">
             <label htmlFor="domain">Domain</label>
