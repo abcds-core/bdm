@@ -1,6 +1,6 @@
 {
-  "date": "August 06, 2026",
-  "consented": 572,
+  "date": "August 14, 2026",
+  "consented": 578,
   "status": [
     {
       "key": "enrolled",
@@ -283,14 +283,14 @@
     },
     {
       "label": "Male",
-      "value": 282,
+      "value": 283,
       "color": "var(--accent-green)"
     }
   ],
   "race_ethnicity": [
     {
       "label": "White",
-      "value": 485
+      "value": 486
     },
     {
       "label": "African American",
@@ -319,6 +319,27 @@
   ],
   "site_activity": [
     {
+      "site_initials": "KUMC",
+      "event_code": "+ 1 Cycle1 (Total 34)",
+      "examdate": "Aug 12",
+      "n": 34,
+      "color": "purple"
+    },
+    {
+      "site_initials": "NYSIBRDD",
+      "event_code": "+ 1 Cycle3 (Total 40)",
+      "examdate": "Aug 10",
+      "n": 40,
+      "color": "var(--accent-blue)"
+    },
+    {
+      "site_initials": "UCAM",
+      "event_code": "+ 1 Cycle2 (Total 33)",
+      "examdate": "Aug 06",
+      "n": 33,
+      "color": "var(--accent-amber)"
+    },
+    {
       "site_initials": "WASHU",
       "event_code": "+ 1 Cycle2 (Total 33)",
       "examdate": "Aug 05",
@@ -330,28 +351,7 @@
       "event_code": "+ 1 Cycle3 (Total 20)",
       "examdate": "Aug 03",
       "n": 20,
-      "color": "var(--accent-blue)"
-    },
-    {
-      "site_initials": "NYSIBRDD",
-      "event_code": "+ 1 Cycle1 (Total 80)",
-      "examdate": "Aug 01",
-      "n": 80,
-      "color": "var(--accent-green)"
-    },
-    {
-      "site_initials": "UWI",
-      "event_code": "+ 1 Cycle2 (Total 62)",
-      "examdate": "Jul 30",
-      "n": 62,
       "color": "var(--accent-amber)"
-    },
-    {
-      "site_initials": "UPITT",
-      "event_code": "+ 1 Cycle1 (Total 57)",
-      "examdate": "Jul 29",
-      "n": 57,
-      "color": "purple"
     }
   ]
 }
