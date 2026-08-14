@@ -2,21 +2,76 @@
   "Health History": {
     "Allergies": [
       "hh_allerenv",
-      "hh_allerenvage",
       "hh_allerfood",
-      "hh_alerfoodage",
       "hh_allergdrug",
-      "hh_allergdrugage"
+      "hh_allerother",
+      "hh_allerseasonal"
     ],
-    "Cancer": ["hh_cancer", "hh_cancer_surgery", "hh_leuk", "hh_leukage"],
-    "Cardiovascular": [
+    "Autoimmune": [
+      "hh_alopecia",
+      "hh_celiac",
+      "hh_ibd",
+      "hh_lupus",
+      "hh_psoriasis",
+      "hh_rheuart",
+      "hh_autoimmune"
+    ],
+    "Brain Health": [
+      "hh_adhd",
+      "hh_bpd",
+      "hh_dementia",
+      "hh_depression",
+      "hh_ocd",
+      "hh_park",
+      "hh_pd",
+      "hh_regress",
+      "hh_seizure",
+      "hh_tbi",
+      "hh_hearing",
+      "hh_vision",
+      "hh_cataracts"
+    ],
+    "Cancer": ["hh_cancer", "hh_cancer_surgery", "hh_leuk"],
+    "Cardiometabolic": [
       "hh_chd",
       "hh_chd_type",
       "hh_cardiac_surgery",
       "hh_hypertension",
-      "hh_hyoptension"
+      "hh_hyoptension",
+      "hh_dvt",
+      "hh_hyperlipidemia",
+      "hh_hypotension",
+      "hh_pacemaker",
+      "hh_pvd",
+      "hh_raynauds",
+      "hh_sleep_apnea",
+      "hh_sleep_apntreat",
+      "hh_str",
+      "hh_syncope",
+      "hh_diabetes",
+      "hh_diabetes_type"
     ],
-    "Diabetes": ["hh_diabetes", "hh_diabetesage", "hh_diabetes_type"],
+    "Digestive": ["hh_dysph", "hh_gerd", "hh_ibs"],
+    "Deficiency": ["hh_anemia", "hh_b12", "hh_vit_d"],
+    "Menopause": [
+      "hh_menopausal",
+      "hh_menopausal_last",
+      "hh_menopausal_onset",
+      "hh_menopausal_status",
+      "hh_menstruated"
+    ],
+    "Muscuoskeletal": [
+      "hh_atlanto",
+      "hh_djd",
+      "hh_gout",
+      "hh_ortho",
+      "hh_osteoarthritis",
+      "hh_osteoporosis",
+      "hh_fracture",
+      "hh_fracture_5yr",
+      "hh_fracture_loc"
+    ],
+    "Respiratory": ["hh_asthma", "hh_covid", "hh_pe", "hh_pneumonia"],
     "Thyroid": ["hh_hypothyroidism", "hh_hyperthyroidism"]
   },
 
