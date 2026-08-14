@@ -9,7 +9,7 @@ const RESOURCES = [
   },
   {
     label: "Vignettes",
-    description: "Information and Tutorials on How to Work with ABC-DS Data",
+    description: "Tutorials on How to Work with ABC-DS Data",
     href: "https://abcds-core.github.io/documentation/",
   },
   {
