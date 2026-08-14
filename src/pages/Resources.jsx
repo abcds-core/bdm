@@ -8,6 +8,11 @@ const RESOURCES = [
     href: "https://abcds-core.github.io/documentation/",
   },
   {
+    label: "Vignettes",
+    description: "Information and Tutorials on How to Work with ABC-DS Data",
+    href: "https://abcds-core.github.io/documentation/",
+  },
+  {
     label: "KBIT-2 Calculator",
     description: "Calculator tool for KBIT-2 scoring.",
     href: "https://bhelsel.github.io/kbit2/",
