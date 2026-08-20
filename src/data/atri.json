@@ -1,23 +1,23 @@
 {
-  "date": "August 14, 2026",
-  "consented": 578,
+  "date": "August 20, 2026",
+  "consented": 579,
   "status": [
     {
       "key": "enrolled",
       "label": "Enrolled",
-      "value": 545,
+      "value": 547,
       "color": "blue"
     },
     {
       "key": "active",
       "label": "Active",
-      "value": 497,
+      "value": 498,
       "color": "green"
     },
     {
       "key": "deaths",
       "label": "Deaths",
-      "value": 27,
+      "value": 28,
       "color": "red"
     },
     {
@@ -262,11 +262,11 @@
     },
     {
       "examdate": "2026-07",
-      "n": 544
+      "n": 545
     },
     {
       "examdate": "2026-08",
-      "n": 545
+      "n": 547
     }
   ],
   "age": {
@@ -319,39 +319,39 @@
   ],
   "site_activity": [
     {
+      "site_initials": "WASHU",
+      "event_code": "+ 1 Cycle2 (Total 34)",
+      "examdate": "Aug 17",
+      "n": 34,
+      "color": "var(--accent-blue)"
+    },
+    {
+      "site_initials": "WASHU",
+      "event_code": "+ 1 Cycle2 (Total 34)",
+      "examdate": "Aug 14",
+      "n": 34,
+      "color": "var(--accent-blue)"
+    },
+    {
+      "site_initials": "UWI",
+      "event_code": "+ 1 Cycle4 (Total 2)",
+      "examdate": "Aug 13",
+      "n": 2,
+      "color": "var(--accent-amber)"
+    },
+    {
       "site_initials": "KUMC",
       "event_code": "+ 1 Cycle1 (Total 34)",
       "examdate": "Aug 12",
       "n": 34,
-      "color": "purple"
-    },
-    {
-      "site_initials": "NYSIBRDD",
-      "event_code": "+ 1 Cycle3 (Total 40)",
-      "examdate": "Aug 10",
-      "n": 40,
-      "color": "var(--accent-blue)"
-    },
-    {
-      "site_initials": "UCAM",
-      "event_code": "+ 1 Cycle2 (Total 33)",
-      "examdate": "Aug 06",
-      "n": 33,
-      "color": "var(--accent-amber)"
-    },
-    {
-      "site_initials": "WASHU",
-      "event_code": "+ 1 Cycle2 (Total 33)",
-      "examdate": "Aug 05",
-      "n": 33,
       "color": "var(--accent-red)"
     },
     {
-      "site_initials": "UCAM",
-      "event_code": "+ 1 Cycle3 (Total 20)",
-      "examdate": "Aug 03",
-      "n": 20,
-      "color": "var(--accent-amber)"
+      "site_initials": "UPITT",
+      "event_code": "+ 1 Cycle1 (Total 58)",
+      "examdate": "Aug 12",
+      "n": 58,
+      "color": "var(--accent-green)"
     }
   ]
 }
