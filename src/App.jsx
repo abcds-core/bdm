@@ -13,11 +13,19 @@ import "./App.css";
 
 export default function App() {
   const [mode, setMode] = useState("dark");
+  const [sidebarOpen, setSidebarOpen] = useState(true);
 
   return (
     <HashRouter>
-      <div className="app" data-theme={mode}>
-        <Sidebar />
+      <div
+        className="app"
+        data-theme={mode}
+        data-sidebar={sidebarOpen ? "open" : "closed"}
+      >
+        <Sidebar
+          collapsed={!sidebarOpen}
+          onToggle={() => setSidebarOpen((p) => !p)}
+        />
 
         <div className="app__main">
           <Topbar

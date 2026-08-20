@@ -21,6 +21,7 @@
   background: rgba(76, 206, 172, 0.13);
   color: var(--accent-green);
   display: flex;
+  margin-left: 35px;
 }
 
 .sidebar__brand-name {
@@ -70,4 +71,68 @@
 .sidebar__footer-logo {
   width: 100%;
   height: auto;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 var(--sidebar-width, 240px);
+  min-width: 50px;
+  background: var(--sidebar-bg);
+  position: relative;
+  transition:
+    flex-basis 0.2s ease,
+    background 0.2s ease;
+}
+
+.sidebar--collapsed {
+  flex-basis: 0;
+  background: var(--bg); /* blends into page background */
+  overflow: visible; /* let the toggle button poke out */
+}
+
+.sidebar__content {
+  overflow: hidden;
+  white-space: nowrap;
+  opacity: 1;
+  transition: opacity 0.15s ease;
+  width: var(
+    --sidebar-width,
+    240px
+  ); /* fixed width so it doesn't reflow/wrap while fading */
+}
+
+.sidebar--collapsed .sidebar__content {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar__toggle {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition:
+    left 0.2s ease,
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.sidebar--collapsed .sidebar__toggle {
+  left: 0.75rem; /* stays put — sidebar shrinks around it */
+}
+
+.sidebar__toggle:hover {
+  background: var(--surface-alt);
+  color: var(--text);
 }

@@ -3,10 +3,12 @@ import { Search, Bell, Sun, Moon, Menu } from "lucide-react";
 import "./Topbar.css";
 
 const page_title = {
-  "/": "Enrollment Dashboard",
+  "/": "Dashboard",
   "/codebook": "Codebook",
+  "/resources": "Resources",
   "/team": "Team",
   "/data-updates": "Data Updates",
+  "/title-page": "Title Page Builder",
 };
 
 export default function Topbar({ mode, onToggleMode }) {

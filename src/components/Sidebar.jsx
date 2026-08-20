@@ -8,6 +8,7 @@ import {
   ExternalLink,
   BookOpen,
   FileSignature,
+  Menu,
 } from "lucide-react";
 import "./Sidebar.css";
 import abcdsLogo from "/abcds.png";
@@ -21,52 +22,61 @@ const NAV_ITEMS = [
   { label: "Build Title Page", icon: FileSignature, path: "/title-page" },
 ];
 
-export default function Sidebar() {
+export default function Sidebar({ collapsed, onToggle }) {
   return (
-    <aside className="sidebar">
-      <div className="sidebar__brand">
-        <div className="sidebar__brand-icon">
-          <LayoutDashboard size={18} />
+    <aside className={`sidebar ${collapsed ? "sidebar--collapsed" : ""}`}>
+      <button
+        className="sidebar__toggle"
+        onClick={onToggle}
+        aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}
+      >
+        {collapsed ? <Menu size={18} /> : <Menu size={18} />}
+      </button>
+      <div className="sidebar__content">
+        <div className="sidebar__brand">
+          <div className="sidebar__brand-icon">
+            <LayoutDashboard size={18} />
+          </div>
+          <span className="sidebar__brand-name">BDM Core</span>
         </div>
-        <span className="sidebar__brand-name">ABC-DS BDM Core</span>
-      </div>
 
-      <nav className="sidebar__nav">
-        {NAV_ITEMS.map((item) =>
-          item.href ? (
-            <a
-              key={item.label}
-              href={item.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="sidebar__item"
-            >
-              <item.icon size={17} />
-              {item.label}
-              <ExternalLink size={13} className="sidebar__item-external" />
-            </a>
-          ) : (
-            <NavLink
-              key={item.label}
-              to={item.path}
-              end={item.path === "/"}
-              className={({ isActive }) =>
-                `sidebar__item ${isActive ? "sidebar__item--active" : ""}`
-              }
-            >
-              <item.icon size={17} />
-              {item.label}
-            </NavLink>
-          ),
-        )}
-      </nav>
+        <nav className="sidebar__nav">
+          {NAV_ITEMS.map((item) =>
+            item.href ? (
+              <a
+                key={item.label}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="sidebar__item"
+              >
+                <item.icon size={17} />
+                {item.label}
+                <ExternalLink size={13} className="sidebar__item-external" />
+              </a>
+            ) : (
+              <NavLink
+                key={item.label}
+                to={item.path}
+                end={item.path === "/"}
+                className={({ isActive }) =>
+                  `sidebar__item ${isActive ? "sidebar__item--active" : ""}`
+                }
+              >
+                <item.icon size={17} />
+                {item.label}
+              </NavLink>
+            ),
+          )}
+        </nav>
 
-      <div className="sidebar__footer">
-        <img
-          src={abcdsLogo}
-          alt="ABC-DS Logo"
-          className="sidebar__footer-logo"
-        />
+        <div className="sidebar__footer">
+          <img
+            src={abcdsLogo}
+            alt="ABC-DS Logo"
+            className="sidebar__footer-logo"
+          />
+        </div>
       </div>
     </aside>
   );

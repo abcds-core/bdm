@@ -1,4 +1,31 @@
 {
+  "Cognition": {
+    "Down Syndrome Mental Status Exam": ["dsme1", "dsmse_to2"],
+    "Cued Recall": ["frs", "crs", "trs"]
+  },
+  "Consensus": {
+    "Consensus": [
+      "consensus_dx",
+      "ccdsec",
+      "concycle",
+      "prcldgpr",
+      "prcldgsec",
+      "prpathspec",
+      "secpathspec"
+    ]
+  },
+  "Demographics": {
+    "Age and latency of the participant at visit": ["age_at_visit"],
+    "Participant Demographics": [
+      "de_ethnicity",
+      "de_race",
+      "de_raceoth",
+      "de_gender"
+    ],
+    "Karyotyping": ["karyotype", "kardiag"],
+    "ApoE Genotyping Results": ["allele_combo"],
+    "Premorbid Functioning Level": ["prefunclevel"]
+  },
   "Health History": {
     "Allergies": [
       "hh_allerenv",
@@ -37,10 +64,9 @@
       "hh_chd_type",
       "hh_cardiac_surgery",
       "hh_hypertension",
-      "hh_hyoptension",
+      "hh_hypotension",
       "hh_dvt",
       "hh_hyperlipidemia",
-      "hh_hypotension",
       "hh_pacemaker",
       "hh_pvd",
       "hh_raynauds",
@@ -74,7 +100,21 @@
     "Respiratory": ["hh_asthma", "hh_covid", "hh_pe", "hh_pneumonia"],
     "Thyroid": ["hh_hypothyroidism", "hh_hyperthyroidism"]
   },
-
+  "Physical Exam": {
+    "Physical and Neurological Exam": [
+      "bpdia",
+      "bpsys",
+      "hdcirc",
+      "hdcircu",
+      "ht",
+      "htu",
+      "nkcirc",
+      "nkcircu",
+      "pulse",
+      "wt",
+      "wtu"
+    ]
+  },
   "Medications": {
     "Alzheimer's": ["cmalz", "cmalzex"],
     "Antihistamine": ["cmah"],
@@ -82,12 +122,35 @@
     "Cholesterol": ["cmchol", "cmstn"],
     "Epilepsy": ["cmepi"],
     "Mental Health": ["cmdep", "cmanx", "cmpsy", "cmmood"],
-    "Proton Pump Inhibitor": ["ccppi"],
+    "Proton Pump Inhibitor": ["cmppi"],
     "Thyroid": ["cmthy"]
   },
-
-  "Cognition": {
-    "Down Syndrome Mental Status Exam": ["dsme1", "dsmse_to2"],
-    "Cued Recall": ["frs", "crs", "trs"]
+  "Neurological Exam": {
+    "Physical and Neurological Exam": [
+      "cn346",
+      "cn7",
+      "cn7y",
+      "gait",
+      "gaitab",
+      "limhm",
+      "myocl",
+      "pathref",
+      "pathrefy",
+      "trem",
+      "tremy",
+      "uptoes",
+      "uptoesy",
+      "visacl",
+      "visaclot",
+      "visacr",
+      "visacrot",
+      "neck_movements",
+      "facial_rosacea",
+      "alopecia",
+      "dysmetria",
+      "cranial_nerves",
+      "wear_glasses",
+      "deep_tendon_reflexes"
+    ]
   }
 }
