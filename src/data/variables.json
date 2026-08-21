@@ -1,7 +1,36 @@
 {
   "Cognition": {
     "Down Syndrome Mental Status Exam": ["dsme1", "dsmse_to2"],
-    "Cued Recall": ["frs", "crs", "trs"]
+    "Cued Recall": ["frs", "crs", "trs", "ticr"],
+    "Haxby Extended Block Design": ["exbd"],
+    "Block Design- Total Score (Haxby RS + WISC-IV RS)": ["hwrssum"],
+    "Perdue Pegboard": ["dhspp", "nhspp"],
+    "Stroop Cat and Dog Task": ["ttscd", "nescd"],
+    "Kaufman Brief Intelligence Test": [
+      "kbit2nonvbae",
+      "kbit2nonvbaey",
+      "kbit2nonvbstd",
+      "kbit2verbae",
+      "kbit2verbaey",
+      "kbit2verbstd",
+      "mcriq1",
+      "mcriq2",
+      "mcriq3"
+    ],
+    "The Dementia Questionnaire for People with Learning Disabilities": [
+      "dldcs",
+      "dldss"
+    ],
+    "Visual-Motor Integration": ["rsvmi"],
+    "RADD – Hand Movements/Imitation": ["raddim"],
+    "Verbal Fluency": [
+      "vftotexepr",
+      "vftotnepnoc",
+      "vftotnepns",
+      "vftotnepraw",
+      "vftotneprep"
+    ],
+    "Tinetti Assessment Tool: Gait Test": ["tbaba"]
   },
   "Consensus": {
     "Consensus": [
