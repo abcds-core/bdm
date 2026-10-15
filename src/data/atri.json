@@ -1,29 +1,29 @@
 {
-  "date": "August 20, 2026",
-  "consented": 579,
+  "date": "October 15, 2026",
+  "consented": 585,
   "status": [
     {
       "key": "enrolled",
       "label": "Enrolled",
-      "value": 547,
+      "value": 551,
       "color": "blue"
     },
     {
       "key": "active",
       "label": "Active",
-      "value": 498,
+      "value": 497,
       "color": "green"
     },
     {
       "key": "deaths",
       "label": "Deaths",
-      "value": 28,
+      "value": 31,
       "color": "red"
     },
     {
       "key": "ltfu",
       "label": "Lost to Follow Up",
-      "value": 19,
+      "value": 20,
       "color": "amber"
     }
   ],
@@ -266,7 +266,11 @@
     },
     {
       "examdate": "2026-08",
-      "n": 547
+      "n": 549
+    },
+    {
+      "examdate": "2026-09",
+      "n": 551
     }
   ],
   "age": {
@@ -278,12 +282,12 @@
   "sex": [
     {
       "label": "Female",
-      "value": 229,
+      "value": 228,
       "color": "var(--accent-blue)"
     },
     {
       "label": "Male",
-      "value": 283,
+      "value": 285,
       "color": "var(--accent-green)"
     }
   ],
@@ -294,7 +298,7 @@
     },
     {
       "label": "African American",
-      "value": 16
+      "value": 18
     },
     {
       "label": "Asian",
@@ -314,43 +318,43 @@
     },
     {
       "label": "Hispanic / Latino",
-      "value": 42
+      "value": 43
     }
   ],
   "site_activity": [
     {
       "site_initials": "WASHU",
-      "event_code": "+ 1 Cycle2 (Total 34)",
-      "examdate": "Aug 17",
-      "n": 34,
-      "color": "var(--accent-blue)"
-    },
-    {
-      "site_initials": "WASHU",
-      "event_code": "+ 1 Cycle2 (Total 34)",
-      "examdate": "Aug 14",
-      "n": 34,
-      "color": "var(--accent-blue)"
-    },
-    {
-      "site_initials": "UWI",
-      "event_code": "+ 1 Cycle4 (Total 2)",
-      "examdate": "Aug 13",
-      "n": 2,
-      "color": "var(--accent-amber)"
-    },
-    {
-      "site_initials": "KUMC",
-      "event_code": "+ 1 Cycle1 (Total 34)",
-      "examdate": "Aug 12",
-      "n": 34,
+      "event_code": "+ 1 Cycle4 (Total 5)",
+      "examdate": "Oct 14",
+      "n": 5,
       "color": "var(--accent-red)"
     },
     {
-      "site_initials": "UPITT",
-      "event_code": "+ 1 Cycle1 (Total 58)",
-      "examdate": "Aug 12",
-      "n": 58,
+      "site_initials": "MGH",
+      "event_code": "+ 1 Cycle4 (Total 9)",
+      "examdate": "Oct 13",
+      "n": 9,
+      "color": "purple"
+    },
+    {
+      "site_initials": "WASHU",
+      "event_code": "+ 1 Cycle2 (Total 35)",
+      "examdate": "Oct 13",
+      "n": 35,
+      "color": "var(--accent-red)"
+    },
+    {
+      "site_initials": "UWI",
+      "event_code": "+ 1 Cycle3 (Total 29)",
+      "examdate": "Oct 13",
+      "n": 29,
+      "color": "var(--accent-blue)"
+    },
+    {
+      "site_initials": "NYSIBRDD",
+      "event_code": "+ 1 Cycle3 (Total 42)",
+      "examdate": "Oct 09",
+      "n": 42,
       "color": "var(--accent-green)"
     }
   ]
