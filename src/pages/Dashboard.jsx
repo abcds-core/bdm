@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { UserPlus, Activity, HeartOff, UserMinus } from "lucide-react";
 import Sidebar from "../components/Sidebar";
 import Topbar from "../components/Topbar";
@@ -9,10 +9,26 @@ import RecentActivity from "../components/RecentActivity";
 import DonutChart from "../components/DonutChart";
 import AgeStat from "../components/AgeStat";
 import RaceEthnicityChart from "../components/RaceEthnicityChart";
-import data from "../data/atri.json";
 import "../App.css";
 
 export default function Dashboard() {
+  const DB_URL = "https://abcds-core-bdm-default-rtdb.firebaseio.com";
+  const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetch(`${DB_URL}/counts.json`)
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
+      .then(setData)
+      .catch(setError);
+  }, []);
+
+  if (error) return <p>Failed to load data: {error.message}</p>;
+  if (!data) return <p>Loading…</p>;
+
   const sexTotal = data.sex.reduce((sum, s) => sum + s.value, 0);
 
   return (
