@@ -327,35 +327,35 @@
       "event_code": "+ 1 Cycle2 (Total 14)",
       "examdate": "Oct 27",
       "n": 14,
-      "color": "var(--accent-red)"
+      "color": "purple"
     },
     {
       "site_initials": "UWI",
       "event_code": "+ 1 Cycle3 (Total 30)",
       "examdate": "Oct 27",
       "n": 30,
-      "color": "var(--accent-blue)"
+      "color": "var(--accent-green)"
     },
     {
       "site_initials": "UPITT",
       "event_code": "+ 1 Cycle3 (Total 24)",
       "examdate": "Oct 22",
       "n": 24,
-      "color": "var(--accent-green)"
+      "color": "var(--accent-amber)"
     },
     {
       "site_initials": "MGH",
       "event_code": "+ 1 Cycle4 (Total 11)",
       "examdate": "Oct 22",
       "n": 11,
-      "color": "var(--accent-amber)"
+      "color": "var(--accent-blue)"
     },
     {
       "site_initials": "UCISOM",
       "event_code": "+ 1 Cycle3 (Total 41)",
       "examdate": "Oct 22",
       "n": 41,
-      "color": "purple"
+      "color": "var(--accent-red)"
     }
   ]
 }
